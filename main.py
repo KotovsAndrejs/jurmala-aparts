@@ -35,24 +35,18 @@ while True:
     elif choice == '2':
         # https://www.w3schools.com/python/python_lists_sort.asp
         def custom_sort(apartment):
-            return int(apartment[-1])  # Convert to float assuming prices can have decimals
-
-        # Sort apartments based on the custom function
+            return int(apartment[-1]) 
         sorted_apartments = sorted(apartments, key=custom_sort, reverse=True)
-
-        # Print the top 10 by highest price
         for i in range(10):
             print(sorted_apartments[i])
         pass
     elif choice == '3':
         # https://www.w3schools.com/python/python_lists_sort.asp
         def custom_sort(apartment):
-            return int(apartment[-1])  # Convert to float assuming prices can have decimals
+            return int(apartment[-1])  
 
-        # Sort apartments based on the custom function
         sorted_apartments = sorted(apartments, key=custom_sort)
 
-        # Print the top 10 by highest price
         for i in range(10):
             print(sorted_apartments[i])
         pass
